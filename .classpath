@@ -4,5 +4,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/ejml-0.24.jar"/>
 	<classpathentry kind="lib" path="lib/javaoctave-0.6.4.jar"/>
+	<classpathentry kind="lib" path="lib/jfumin.jar" sourcepath="lib"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

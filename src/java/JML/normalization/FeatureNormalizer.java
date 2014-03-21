@@ -22,13 +22,13 @@ public class FeatureNormalizer {
 		return Math.sqrt(stdDev);
 	}
 	
-	public static double[] normalizer(double[] m){
-		double mean = mean(m);
-		double stdDev = standardDeviation(m);
-		double normalizedArray [] = new double[m.length];
+	public static double[] normalizer(double[] features){
+		double mean = mean(features);
+		double stdDev = standardDeviation(features);
+		double normalizedArray [] = new double[features.length];
 		
-		for(int i = 0; i < m.length; i++){
-			normalizedArray[i] = (m[i] - mean) / stdDev;
+		for(int i = 0; i < features.length; i++){
+			normalizedArray[i] = (features[i] - mean) / stdDev;
 		}
 		
 		return normalizedArray;
