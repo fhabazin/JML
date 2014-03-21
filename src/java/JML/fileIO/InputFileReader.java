@@ -1,11 +1,13 @@
 package java.JML.fileIO;
 
+import java.JML.regression.RegressionFeatures;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.StringTokenizer;
@@ -25,6 +27,7 @@ public class InputFileReader {
 	private static final String LINEAR_REGRESSION_STRING = "lin";
 	private static final String LOGISTIC_REGRESSION_STRING = "log";
 	private static final Map<String, String> args = new HashMap<String, String>();
+	private static Map<String, ArrayList<RegressionFeatures>> sets;
 	private String filePath;
 	private static String line;
 	private static int numOfFeatures;
@@ -43,7 +46,7 @@ public class InputFileReader {
 		final FileInputStream fstream = new FileInputStream(filePath);
 		final DataInputStream in = new DataInputStream(fstream);
 		final BufferedReader br = new BufferedReader(new InputStreamReader(in));
-
+		sets= new HashMap<String, ArrayList<RegressionFeatures>>();
 		while ((line = br.readLine()) != null) {
 			parseLine();
 			if(line.contains(COMMENT_START_STRING))
@@ -167,6 +170,14 @@ public class InputFileReader {
 		}
 	}*/
 
+	public ArrayList<RegressionFeatures> getArrayFromMap(String name) {
+		return sets.get(name);
+	}
+
+	public static void setSets(Map<String, ArrayList<RegressionFeatures>> sets) {
+		InputFileReader.sets = sets;
+	}
+
 	private static String getArg(final String name) throws IOException {
 		final String result = args.get(name);
 		if (result == null) {
@@ -175,4 +186,6 @@ public class InputFileReader {
 		}
 		return result;
 	}
+	
+	
 }

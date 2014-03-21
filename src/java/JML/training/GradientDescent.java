@@ -1,4 +1,6 @@
-package java.JML.regression;
+package java.JML.training;
+
+import java.JML.regression.RegressionParameters;
 
 
 public abstract class GradientDescent {
