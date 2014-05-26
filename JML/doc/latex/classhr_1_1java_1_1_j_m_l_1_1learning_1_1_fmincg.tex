@@ -1,0 +1,146 @@
+\hypertarget{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_fmincg}{\section{hr.\+java.\+J\+M\+L.\+learning.\+Fmincg Class Reference}
+\label{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_fmincg}\index{hr.\+java.\+J\+M\+L.\+learning.\+Fmincg@{hr.\+java.\+J\+M\+L.\+learning.\+Fmincg}}
+}
+Inheritance diagram for hr.\+java.\+J\+M\+L.\+learning.\+Fmincg\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_fmincg}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+final Double\+Vector \hyperlink{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_fmincg_a91e1dfdbc2222e1844a3c6d079a7e3e7}{minimize} (\hyperlink{interfacehr_1_1java_1_1_j_m_l_1_1cost_1_1_cost_function}{Cost\+Function} f, Double\+Vector theta, int length, boolean verbose)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Double\+Vector \hyperlink{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_fmincg_a214ab4364ba5cba6fdf1bcebd6d74be5}{minimize\+Function} (\hyperlink{interfacehr_1_1java_1_1_j_m_l_1_1cost_1_1_cost_function}{Cost\+Function} f, Double\+Vector theta, int max\+Iterations, boolean verbose)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_fmincg_a2a668ac99dd7384c2328358bdecfc7fe}{static double {\bfseries E\+X\+T} = 3.\+0}\label{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_fmincg_a2a668ac99dd7384c2328358bdecfc7fe}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Minimize a continuous differentialble multivariate function. Starting point ~\newline
+ is given by \char`\"{}\+X\char`\"{} (D by 1), and the function named in the string \char`\"{}f\char`\"{}, must~\newline
+ return a function value and a vector of partial derivatives. The Polack-\/~\newline
+ Ribiere flavour of conjugate gradients is used to compute search directions,~\newline
+ and a line search using quadratic and cubic polynomial approximations and the~\newline
+ Wolfe-\/\+Powell stopping criteria is used together with the slope ratio method~\newline
+ for guessing initial step sizes. Additionally a bunch of checks are made to~\newline
+ make sure that exploration is taking place and that extrapolation will not~\newline
+ be unboundedly large. The \char`\"{}length\char`\"{} gives the length of the run\+: if it is~\newline
+ positive, it gives the maximum number of line searches, if negative its~\newline
+ absolute gives the maximum allowed number of function evaluations. You can~\newline
+ (optionally) give \char`\"{}length\char`\"{} a second component, which will indicate the~\newline
+ reduction in function value to be expected in the first line-\/search (defaults~\newline
+ to 1.\+0). The function returns when either its length is up, or if no further~\newline
+ progress can be made (ie, we are at a minimum, or so close that due to~\newline
+ numerical problems, we cannot get any closer). If the function terminates~\newline
+ within a few iterations, it could be an indication that the function value~\newline
+ and derivatives are not consistent (ie, there may be a bug in the~\newline
+ implementation of your \char`\"{}f\char`\"{} function). The function returns the found~\newline
+ solution \char`\"{}\+X\char`\"{}, a vector of function values \char`\"{}f\+X\char`\"{} indicating the progress made~\newline
+ and \char`\"{}i\char`\"{} the number of iterations (line searches or function evaluations,~\newline
+ depending on the sign of \char`\"{}length\char`\"{}) used.~\newline
+ ~\newline
+ Usage\+: \mbox{[}X, f\+X, i\mbox{]} = fmincg(f, X, options, P1, P2, P3, P4, P5)~\newline
+ ~\newline
+ See also\+: checkgrad ~\newline
+ ~\newline
+ Copyright (C) 2001 and 2002 by Carl Edward Rasmussen. Date 2002-\/02-\/13~\newline
+ ~\newline
+ ~\newline
+ (C) Copyright 1999, 2000 \& 2001, Carl Edward Rasmussen ~\newline
+ Permission is granted for anyone to copy, use, or modify these~\newline
+ programs and accompanying documents for purposes of research or~\newline
+ education, provided this copyright notice is retained, and note is~\newline
+ made of any changes that have been made.~\newline
+ ~\newline
+ These programs and documents are distributed without any warranty,~\newline
+ express or implied. As the programs were written for research~\newline
+ purposes only, they have not been tested to the degree that would be~\newline
+ advisable in any important application. All use of these programs is~\newline
+ entirely at the user's own risk.~\newline
+ ~\newline
+ \mbox{[}ml-\/class\mbox{]} Changes Made\+:~\newline
+ 1) Function name and argument specifications~\newline
+ 2) Output display~\newline
+ ~\newline
+ \mbox{[}tjungblut\mbox{]} Changes Made\+: ~\newline
+ 1) translated from octave to java~\newline
+ 2) added an interface to exchange minimizers more easily ~\newline
+ 3) in preparation for the c++ translation, I removed unused fields~\newline
+ B\+T\+W \char`\"{}fmincg\char`\"{} stands for Function minimize nonlinear conjugate gradient 
+
+\subsection{Member Function Documentation}
+\hypertarget{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_fmincg_a91e1dfdbc2222e1844a3c6d079a7e3e7}{\index{hr\+::java\+::\+J\+M\+L\+::learning\+::\+Fmincg@{hr\+::java\+::\+J\+M\+L\+::learning\+::\+Fmincg}!minimize@{minimize}}
+\index{minimize@{minimize}!hr\+::java\+::\+J\+M\+L\+::learning\+::\+Fmincg@{hr\+::java\+::\+J\+M\+L\+::learning\+::\+Fmincg}}
+\subsubsection[{minimize}]{\setlength{\rightskip}{0pt plus 5cm}final Double\+Vector hr.\+java.\+J\+M\+L.\+learning.\+Fmincg.\+minimize (
+\begin{DoxyParamCaption}
+\item[{{\bf Cost\+Function}}]{f, }
+\item[{Double\+Vector}]{theta, }
+\item[{int}]{max\+Iterations, }
+\item[{boolean}]{verbose}
+\end{DoxyParamCaption}
+)}}\label{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_fmincg_a91e1dfdbc2222e1844a3c6d079a7e3e7}
+Minimizes the given costfunction with the starting parameter theta.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & the costfunction to minimize. \\
+\hline
+{\em theta} & the starting parameters. \\
+\hline
+{\em max\+Iterations} & the number of iterations to do. \\
+\hline
+{\em verbose} & if T\+R\+U\+E it will print progress. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the optimized theta parameters. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interfacehr_1_1java_1_1_j_m_l_1_1learning_1_1_minimizer_a4b640a5d2cc5293ccc47736a798c6ab7}{hr.\+java.\+J\+M\+L.\+learning.\+Minimizer}.
+
+\hypertarget{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_fmincg_a214ab4364ba5cba6fdf1bcebd6d74be5}{\index{hr\+::java\+::\+J\+M\+L\+::learning\+::\+Fmincg@{hr\+::java\+::\+J\+M\+L\+::learning\+::\+Fmincg}!minimize\+Function@{minimize\+Function}}
+\index{minimize\+Function@{minimize\+Function}!hr\+::java\+::\+J\+M\+L\+::learning\+::\+Fmincg@{hr\+::java\+::\+J\+M\+L\+::learning\+::\+Fmincg}}
+\subsubsection[{minimize\+Function}]{\setlength{\rightskip}{0pt plus 5cm}static Double\+Vector hr.\+java.\+J\+M\+L.\+learning.\+Fmincg.\+minimize\+Function (
+\begin{DoxyParamCaption}
+\item[{{\bf Cost\+Function}}]{f, }
+\item[{Double\+Vector}]{theta, }
+\item[{int}]{max\+Iterations, }
+\item[{boolean}]{verbose}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_fmincg_a214ab4364ba5cba6fdf1bcebd6d74be5}
+Minimizes the given Cost\+Function with Nonlinear conjugate gradient method. ~\newline
+ It uses the Polack-\/\+Ribiere (P\+R) to calculate the conjugate direction. See ~\newline
+ \hyperlink{}{http\+://en.\+wikipedia.\+org/wiki/\+Nonlinear\+\_\+conjugate\+\_\+gradient\+\_\+method} ~\newline
+ for more information.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & the cost function to minimize. \\
+\hline
+{\em theta} & the input vector, also called starting point \\
+\hline
+{\em max\+Iterations} & the number of iterations to make \\
+\hline
+{\em verbose} & output the progress to S\+T\+D\+O\+U\+T \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector containing the optimized input 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/hr/java/\+J\+M\+L/learning/Fmincg.\+java\end{DoxyCompactItemize}

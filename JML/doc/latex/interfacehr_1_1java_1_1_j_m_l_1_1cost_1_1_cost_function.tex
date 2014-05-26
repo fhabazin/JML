@@ -1,0 +1,41 @@
+\hypertarget{interfacehr_1_1java_1_1_j_m_l_1_1cost_1_1_cost_function}{\section{hr.\+java.\+J\+M\+L.\+cost.\+Cost\+Function Interface Reference}
+\label{interfacehr_1_1java_1_1_j_m_l_1_1cost_1_1_cost_function}\index{hr.\+java.\+J\+M\+L.\+cost.\+Cost\+Function@{hr.\+java.\+J\+M\+L.\+cost.\+Cost\+Function}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classhr_1_1java_1_1_j_m_l_1_1cost_1_1_cost_gradient_tuple}{Cost\+Gradient\+Tuple} \hyperlink{interfacehr_1_1java_1_1_j_m_l_1_1cost_1_1_cost_function_aa63d4185cba8b1f5887093ff9ba7db9a}{evaluate\+Cost} (Double\+Vector input)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Cost function interface to be implemented when using with a optimizer like conjugate gradient for example.
+
+\begin{DoxyAuthor}{Author}
+thomas.\+jungblut 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfacehr_1_1java_1_1_j_m_l_1_1cost_1_1_cost_function_aa63d4185cba8b1f5887093ff9ba7db9a}{\index{hr\+::java\+::\+J\+M\+L\+::cost\+::\+Cost\+Function@{hr\+::java\+::\+J\+M\+L\+::cost\+::\+Cost\+Function}!evaluate\+Cost@{evaluate\+Cost}}
+\index{evaluate\+Cost@{evaluate\+Cost}!hr\+::java\+::\+J\+M\+L\+::cost\+::\+Cost\+Function@{hr\+::java\+::\+J\+M\+L\+::cost\+::\+Cost\+Function}}
+\subsubsection[{evaluate\+Cost}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Cost\+Gradient\+Tuple} hr.\+java.\+J\+M\+L.\+cost.\+Cost\+Function.\+evaluate\+Cost (
+\begin{DoxyParamCaption}
+\item[{Double\+Vector}]{input}
+\end{DoxyParamCaption}
+)}}\label{interfacehr_1_1java_1_1_j_m_l_1_1cost_1_1_cost_function_aa63d4185cba8b1f5887093ff9ba7db9a}
+Evaluation for the cost function to retrieve cost and gradient.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & a given input vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a tuple consists of J (cost) and a vector X which is the gradient of the input. 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/hr/java/\+J\+M\+L/cost/Cost\+Function.\+java\end{DoxyCompactItemize}

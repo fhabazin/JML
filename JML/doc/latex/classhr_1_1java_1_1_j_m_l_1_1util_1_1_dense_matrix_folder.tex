@@ -1,0 +1,68 @@
+\hypertarget{classhr_1_1java_1_1_j_m_l_1_1util_1_1_dense_matrix_folder}{\section{hr.\+java.\+J\+M\+L.\+util.\+Dense\+Matrix\+Folder Class Reference}
+\label{classhr_1_1java_1_1_j_m_l_1_1util_1_1_dense_matrix_folder}\index{hr.\+java.\+J\+M\+L.\+util.\+Dense\+Matrix\+Folder@{hr.\+java.\+J\+M\+L.\+util.\+Dense\+Matrix\+Folder}}
+}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Double\+Vector \hyperlink{classhr_1_1java_1_1_j_m_l_1_1util_1_1_dense_matrix_folder_a322a9d5a5af15ffeca0a11e7772761ab}{fold\+Matrices} (Double\+Matrix...\+matrices)
+\item 
+static Double\+Matrix\mbox{[}$\,$\mbox{]} \hyperlink{classhr_1_1java_1_1_j_m_l_1_1util_1_1_dense_matrix_folder_a0d9c5a40c979367df898348c4781b1eb}{unfold\+Matrices} (Double\+Vector vector, int\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} size\+Array)
+\item 
+static Double\+Matrix \hyperlink{classhr_1_1java_1_1_j_m_l_1_1util_1_1_dense_matrix_folder_ad64e17bc9f959157f5e857be642b00a5}{unfold\+Matrix} (Double\+Vector vector, int rows, int cols)
+\item 
+static Double\+Vector \hyperlink{classhr_1_1java_1_1_j_m_l_1_1util_1_1_dense_matrix_folder_abf332d6e1120572283da3a7c49166095}{fold\+Matrix} (Double\+Matrix mat)
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classhr_1_1java_1_1_j_m_l_1_1util_1_1_dense_matrix_folder_a322a9d5a5af15ffeca0a11e7772761ab}{\index{hr\+::java\+::\+J\+M\+L\+::util\+::\+Dense\+Matrix\+Folder@{hr\+::java\+::\+J\+M\+L\+::util\+::\+Dense\+Matrix\+Folder}!fold\+Matrices@{fold\+Matrices}}
+\index{fold\+Matrices@{fold\+Matrices}!hr\+::java\+::\+J\+M\+L\+::util\+::\+Dense\+Matrix\+Folder@{hr\+::java\+::\+J\+M\+L\+::util\+::\+Dense\+Matrix\+Folder}}
+\subsubsection[{fold\+Matrices}]{\setlength{\rightskip}{0pt plus 5cm}static Double\+Vector hr.\+java.\+J\+M\+L.\+util.\+Dense\+Matrix\+Folder.\+fold\+Matrices (
+\begin{DoxyParamCaption}
+\item[{Double\+Matrix...}]{matrices}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classhr_1_1java_1_1_j_m_l_1_1util_1_1_dense_matrix_folder_a322a9d5a5af15ffeca0a11e7772761ab}
+Folds the given matrices column-\/wise into a single vector. \hypertarget{classhr_1_1java_1_1_j_m_l_1_1util_1_1_dense_matrix_folder_abf332d6e1120572283da3a7c49166095}{\index{hr\+::java\+::\+J\+M\+L\+::util\+::\+Dense\+Matrix\+Folder@{hr\+::java\+::\+J\+M\+L\+::util\+::\+Dense\+Matrix\+Folder}!fold\+Matrix@{fold\+Matrix}}
+\index{fold\+Matrix@{fold\+Matrix}!hr\+::java\+::\+J\+M\+L\+::util\+::\+Dense\+Matrix\+Folder@{hr\+::java\+::\+J\+M\+L\+::util\+::\+Dense\+Matrix\+Folder}}
+\subsubsection[{fold\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}static Double\+Vector hr.\+java.\+J\+M\+L.\+util.\+Dense\+Matrix\+Folder.\+fold\+Matrix (
+\begin{DoxyParamCaption}
+\item[{Double\+Matrix}]{mat}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classhr_1_1java_1_1_j_m_l_1_1util_1_1_dense_matrix_folder_abf332d6e1120572283da3a7c49166095}
+Folds a single matrix into a single vector by rows. \hypertarget{classhr_1_1java_1_1_j_m_l_1_1util_1_1_dense_matrix_folder_a0d9c5a40c979367df898348c4781b1eb}{\index{hr\+::java\+::\+J\+M\+L\+::util\+::\+Dense\+Matrix\+Folder@{hr\+::java\+::\+J\+M\+L\+::util\+::\+Dense\+Matrix\+Folder}!unfold\+Matrices@{unfold\+Matrices}}
+\index{unfold\+Matrices@{unfold\+Matrices}!hr\+::java\+::\+J\+M\+L\+::util\+::\+Dense\+Matrix\+Folder@{hr\+::java\+::\+J\+M\+L\+::util\+::\+Dense\+Matrix\+Folder}}
+\subsubsection[{unfold\+Matrices}]{\setlength{\rightskip}{0pt plus 5cm}static Double\+Matrix \mbox{[}$\,$\mbox{]} hr.\+java.\+J\+M\+L.\+util.\+Dense\+Matrix\+Folder.\+unfold\+Matrices (
+\begin{DoxyParamCaption}
+\item[{Double\+Vector}]{vector, }
+\item[{int}]{size\+Array\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classhr_1_1java_1_1_j_m_l_1_1util_1_1_dense_matrix_folder_a0d9c5a40c979367df898348c4781b1eb}
+Unfolds a vector into matrices by the rules defined in the size\+Array. The size\+Array must have following format\+: in each row the row and column count must be provided.~\newline
+ Example\+: size\+Array = \{\{2,3\},\{3,2\}\} will unfold into matrix 0 with 2 rows and 3 columns and matrix 1 with 3 rows and 2 columns. \hypertarget{classhr_1_1java_1_1_j_m_l_1_1util_1_1_dense_matrix_folder_ad64e17bc9f959157f5e857be642b00a5}{\index{hr\+::java\+::\+J\+M\+L\+::util\+::\+Dense\+Matrix\+Folder@{hr\+::java\+::\+J\+M\+L\+::util\+::\+Dense\+Matrix\+Folder}!unfold\+Matrix@{unfold\+Matrix}}
+\index{unfold\+Matrix@{unfold\+Matrix}!hr\+::java\+::\+J\+M\+L\+::util\+::\+Dense\+Matrix\+Folder@{hr\+::java\+::\+J\+M\+L\+::util\+::\+Dense\+Matrix\+Folder}}
+\subsubsection[{unfold\+Matrix}]{\setlength{\rightskip}{0pt plus 5cm}static Double\+Matrix hr.\+java.\+J\+M\+L.\+util.\+Dense\+Matrix\+Folder.\+unfold\+Matrix (
+\begin{DoxyParamCaption}
+\item[{Double\+Vector}]{vector, }
+\item[{int}]{rows, }
+\item[{int}]{cols}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classhr_1_1java_1_1_j_m_l_1_1util_1_1_dense_matrix_folder_ad64e17bc9f959157f5e857be642b00a5}
+Unfolds a single vector into a single matrix by rows.
+
+
+\begin{DoxyParams}{Parameters}
+{\em vector} & the vector to split. \\
+\hline
+{\em rows} & the number of rows the target matrix needs to have. \\
+\hline
+{\em cols} & the number of columns the target matrix needs to have. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a matrix with the contents of the vector, row split. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/hr/java/\+J\+M\+L/util/Dense\+Matrix\+Folder.\+java\end{DoxyCompactItemize}

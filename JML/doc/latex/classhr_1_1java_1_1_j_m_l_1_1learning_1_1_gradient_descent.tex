@@ -1,0 +1,94 @@
+\hypertarget{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_gradient_descent}{\section{hr.\+java.\+J\+M\+L.\+learning.\+Gradient\+Descent Class Reference}
+\label{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_gradient_descent}\index{hr.\+java.\+J\+M\+L.\+learning.\+Gradient\+Descent@{hr.\+java.\+J\+M\+L.\+learning.\+Gradient\+Descent}}
+}
+Inheritance diagram for hr.\+java.\+J\+M\+L.\+learning.\+Gradient\+Descent\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_gradient_descent}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class {\bfseries Gradient\+Descent\+Builder}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_gradient_descent_aa32d3a402cf616e329e99edb77fc158b}{Gradient\+Descent} (double alpha, double limit)
+\item 
+\hypertarget{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_gradient_descent_a86328bc9a0e726c3cb170c9ff7f2f5d2}{final Double\+Vector {\bfseries minimize} (\hyperlink{interfacehr_1_1java_1_1_j_m_l_1_1cost_1_1_cost_function}{Cost\+Function} f, Double\+Vector p\+Input, final int max\+Iterations, boolean verbose)}\label{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_gradient_descent_a86328bc9a0e726c3cb170c9ff7f2f5d2}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Double\+Vector \hyperlink{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_gradient_descent_a3506167dfc8e64ff2104c63be5ec58f7}{minimize\+Function} (\hyperlink{interfacehr_1_1java_1_1_j_m_l_1_1cost_1_1_cost_function}{Cost\+Function} f, Double\+Vector p\+Input, double alpha, double limit, int length, final boolean verbose)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Gradient descent implementation with some neat features like momentum, divergence detection, delta breaks and bold driver and scheduled annealing adaptive learning rates. For more sophisticated configuration use the \hyperlink{}{Gradient\+Descent\+Builder}.
+
+\begin{DoxyAuthor}{Author}
+thomas.\+jungblut 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_gradient_descent_aa32d3a402cf616e329e99edb77fc158b}{\index{hr\+::java\+::\+J\+M\+L\+::learning\+::\+Gradient\+Descent@{hr\+::java\+::\+J\+M\+L\+::learning\+::\+Gradient\+Descent}!Gradient\+Descent@{Gradient\+Descent}}
+\index{Gradient\+Descent@{Gradient\+Descent}!hr\+::java\+::\+J\+M\+L\+::learning\+::\+Gradient\+Descent@{hr\+::java\+::\+J\+M\+L\+::learning\+::\+Gradient\+Descent}}
+\subsubsection[{Gradient\+Descent}]{\setlength{\rightskip}{0pt plus 5cm}hr.\+java.\+J\+M\+L.\+learning.\+Gradient\+Descent.\+Gradient\+Descent (
+\begin{DoxyParamCaption}
+\item[{double}]{alpha, }
+\item[{double}]{limit}
+\end{DoxyParamCaption}
+)}}\label{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_gradient_descent_aa32d3a402cf616e329e99edb77fc158b}
+
+\begin{DoxyParams}{Parameters}
+{\em alpha} & the learning rate. \\
+\hline
+{\em limit} & the delta in cost to archieve to break the iterations. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_gradient_descent_a3506167dfc8e64ff2104c63be5ec58f7}{\index{hr\+::java\+::\+J\+M\+L\+::learning\+::\+Gradient\+Descent@{hr\+::java\+::\+J\+M\+L\+::learning\+::\+Gradient\+Descent}!minimize\+Function@{minimize\+Function}}
+\index{minimize\+Function@{minimize\+Function}!hr\+::java\+::\+J\+M\+L\+::learning\+::\+Gradient\+Descent@{hr\+::java\+::\+J\+M\+L\+::learning\+::\+Gradient\+Descent}}
+\subsubsection[{minimize\+Function}]{\setlength{\rightskip}{0pt plus 5cm}static Double\+Vector hr.\+java.\+J\+M\+L.\+learning.\+Gradient\+Descent.\+minimize\+Function (
+\begin{DoxyParamCaption}
+\item[{{\bf Cost\+Function}}]{f, }
+\item[{Double\+Vector}]{p\+Input, }
+\item[{double}]{alpha, }
+\item[{double}]{limit, }
+\item[{int}]{length, }
+\item[{final boolean}]{verbose}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_gradient_descent_a3506167dfc8e64ff2104c63be5ec58f7}
+Minimize a given cost function f with the initial parameters p\+Input (also called theta) with a learning rate alpha and a fixed number of iterations. The loop can break earlier if costs converge below the limit. If the same cost was archieved three times in a row, it will also break the iterations.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & the function to minimize. \\
+\hline
+{\em p\+Input} & the starting parameters. \\
+\hline
+{\em alpha} & the learning rate. \\
+\hline
+{\em limit} & the cost to archieve to break the iterations. \\
+\hline
+{\em length} & the number of iterations. \\
+\hline
+{\em verbose} & if true prints progress to S\+T\+D\+O\+U\+T. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the learned minimal parameters. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/hr/java/\+J\+M\+L/learning/Gradient\+Descent.\+java\end{DoxyCompactItemize}

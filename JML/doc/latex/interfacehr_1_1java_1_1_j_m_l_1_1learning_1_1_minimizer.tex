@@ -1,0 +1,60 @@
+\hypertarget{interfacehr_1_1java_1_1_j_m_l_1_1learning_1_1_minimizer}{\section{hr.\+java.\+J\+M\+L.\+learning.\+Minimizer Interface Reference}
+\label{interfacehr_1_1java_1_1_j_m_l_1_1learning_1_1_minimizer}\index{hr.\+java.\+J\+M\+L.\+learning.\+Minimizer@{hr.\+java.\+J\+M\+L.\+learning.\+Minimizer}}
+}
+Inheritance diagram for hr.\+java.\+J\+M\+L.\+learning.\+Minimizer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interfacehr_1_1java_1_1_j_m_l_1_1learning_1_1_minimizer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Double\+Vector \hyperlink{interfacehr_1_1java_1_1_j_m_l_1_1learning_1_1_minimizer_a4b640a5d2cc5293ccc47736a798c6ab7}{minimize} (\hyperlink{interfacehr_1_1java_1_1_j_m_l_1_1cost_1_1_cost_function}{Cost\+Function} f, Double\+Vector theta, int max\+Iterations, boolean verbose)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interfacehr_1_1java_1_1_j_m_l_1_1learning_1_1_minimizer}{Minimizer} interface for various function minimizers.
+
+\begin{DoxyAuthor}{Author}
+thomas.\+jungblut 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interfacehr_1_1java_1_1_j_m_l_1_1learning_1_1_minimizer_a4b640a5d2cc5293ccc47736a798c6ab7}{\index{hr\+::java\+::\+J\+M\+L\+::learning\+::\+Minimizer@{hr\+::java\+::\+J\+M\+L\+::learning\+::\+Minimizer}!minimize@{minimize}}
+\index{minimize@{minimize}!hr\+::java\+::\+J\+M\+L\+::learning\+::\+Minimizer@{hr\+::java\+::\+J\+M\+L\+::learning\+::\+Minimizer}}
+\subsubsection[{minimize}]{\setlength{\rightskip}{0pt plus 5cm}Double\+Vector hr.\+java.\+J\+M\+L.\+learning.\+Minimizer.\+minimize (
+\begin{DoxyParamCaption}
+\item[{{\bf Cost\+Function}}]{f, }
+\item[{Double\+Vector}]{theta, }
+\item[{int}]{max\+Iterations, }
+\item[{boolean}]{verbose}
+\end{DoxyParamCaption}
+)}}\label{interfacehr_1_1java_1_1_j_m_l_1_1learning_1_1_minimizer_a4b640a5d2cc5293ccc47736a798c6ab7}
+Minimizes the given costfunction with the starting parameter theta.
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & the costfunction to minimize. \\
+\hline
+{\em theta} & the starting parameters. \\
+\hline
+{\em max\+Iterations} & the number of iterations to do. \\
+\hline
+{\em verbose} & if T\+R\+U\+E it will print progress. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the optimized theta parameters. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_fmincg_a91e1dfdbc2222e1844a3c6d079a7e3e7}{hr.\+java.\+J\+M\+L.\+learning.\+Fmincg}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/hr/java/\+J\+M\+L/learning/Minimizer.\+java\end{DoxyCompactItemize}

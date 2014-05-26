@@ -1,5 +1,6 @@
 package hr.java.JML.regression;
 
+import hr.JML.examples.LinearRegressionExample;
 import hr.java.JML.cost.CostFunction;
 import hr.java.JML.cost.CostGradientTuple;
 import hr.java.JML.learning.AbstractMinimizer;
@@ -32,7 +33,7 @@ public class LinearRegression implements Serializable {
 	private DoubleVector testSetKnown;
 	private int numOfFeatures;
 	private AbstractMinimizer minimizer;
-	private static final double LAMBDA = 0.5; 
+	private static final double LAMBDA = 0.1; 
 	
 	/**
 	 * Initializes <code>LinearRegression</code> with the test and training sets, 
@@ -141,7 +142,9 @@ public class LinearRegression implements Serializable {
 	 */
 	public void iterationLimitedTraining(int iterations) {
 		CostFunction cf = getCostFunction();
-		this.theta = minimizer.minimize(cf, theta, iterations, true);		
+		System.out.println(LinearRegressionExample.arrayToString(theta.toArray()));
+		this.theta = minimizer.minimize(cf, theta, iterations, true);
+		System.out.println(LinearRegressionExample.arrayToString(theta.toArray()));
 	}
 
 	/**

@@ -1,0 +1,69 @@
+\hypertarget{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_abstract_minimizer}{\section{hr.\+java.\+J\+M\+L.\+learning.\+Abstract\+Minimizer Class Reference}
+\label{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_abstract_minimizer}\index{hr.\+java.\+J\+M\+L.\+learning.\+Abstract\+Minimizer@{hr.\+java.\+J\+M\+L.\+learning.\+Abstract\+Minimizer}}
+}
+Inheritance diagram for hr.\+java.\+J\+M\+L.\+learning.\+Abstract\+Minimizer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_abstract_minimizer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_abstract_minimizer_adbd6e7474e0ca526fb06f3abdcd2dff9}{add\+Iteration\+Completion\+Callback} (\hyperlink{interfacehr_1_1java_1_1_j_m_l_1_1learning_1_1_iteration_completion_listener}{Iteration\+Completion\+Listener} lst)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+final void \hyperlink{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_abstract_minimizer_ad72fedd9f52c8c74b178bfac915b122f}{on\+Iteration\+Finished} (int iteration, double cost, Double\+Vector current\+Weights)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract minimizer class that adds functionality that can be shared between many minimizers. Currently it has just a iteration completion callback facility, but can be later extended to share line searching code or other shared utilities.
+
+\begin{DoxyAuthor}{Author}
+thomas.\+jungblut 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_abstract_minimizer_adbd6e7474e0ca526fb06f3abdcd2dff9}{\index{hr\+::java\+::\+J\+M\+L\+::learning\+::\+Abstract\+Minimizer@{hr\+::java\+::\+J\+M\+L\+::learning\+::\+Abstract\+Minimizer}!add\+Iteration\+Completion\+Callback@{add\+Iteration\+Completion\+Callback}}
+\index{add\+Iteration\+Completion\+Callback@{add\+Iteration\+Completion\+Callback}!hr\+::java\+::\+J\+M\+L\+::learning\+::\+Abstract\+Minimizer@{hr\+::java\+::\+J\+M\+L\+::learning\+::\+Abstract\+Minimizer}}
+\subsubsection[{add\+Iteration\+Completion\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}void hr.\+java.\+J\+M\+L.\+learning.\+Abstract\+Minimizer.\+add\+Iteration\+Completion\+Callback (
+\begin{DoxyParamCaption}
+\item[{{\bf Iteration\+Completion\+Listener}}]{lst}
+\end{DoxyParamCaption}
+)}}\label{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_abstract_minimizer_adbd6e7474e0ca526fb06f3abdcd2dff9}
+Add a callback listener that triggers after a iteration.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lst} & the iteration completion listener. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_abstract_minimizer_ad72fedd9f52c8c74b178bfac915b122f}{\index{hr\+::java\+::\+J\+M\+L\+::learning\+::\+Abstract\+Minimizer@{hr\+::java\+::\+J\+M\+L\+::learning\+::\+Abstract\+Minimizer}!on\+Iteration\+Finished@{on\+Iteration\+Finished}}
+\index{on\+Iteration\+Finished@{on\+Iteration\+Finished}!hr\+::java\+::\+J\+M\+L\+::learning\+::\+Abstract\+Minimizer@{hr\+::java\+::\+J\+M\+L\+::learning\+::\+Abstract\+Minimizer}}
+\subsubsection[{on\+Iteration\+Finished}]{\setlength{\rightskip}{0pt plus 5cm}final void hr.\+java.\+J\+M\+L.\+learning.\+Abstract\+Minimizer.\+on\+Iteration\+Finished (
+\begin{DoxyParamCaption}
+\item[{int}]{iteration, }
+\item[{double}]{cost, }
+\item[{Double\+Vector}]{current\+Weights}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classhr_1_1java_1_1_j_m_l_1_1learning_1_1_abstract_minimizer_ad72fedd9f52c8c74b178bfac915b122f}
+Callback method that should be called from an explicit subclass once an iteration was finished.
+
+
+\begin{DoxyParams}{Parameters}
+{\em iteration} & the number of the current iteration. \\
+\hline
+{\em cost} & the cost at the current iteration. \\
+\hline
+{\em current\+Weights} & the current optimal weights. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/hr/java/\+J\+M\+L/learning/Abstract\+Minimizer.\+java\end{DoxyCompactItemize}
