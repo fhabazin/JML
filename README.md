@@ -1,4 +1,4 @@
 JML
 ===
 
-Java framework form machine learning with support for linear and logistic regression, support vector machines, neural networks and more
+Java framework for machine learning with support for linear and logistic regression and K-means. With plans to add suport for SVM and neural networks
